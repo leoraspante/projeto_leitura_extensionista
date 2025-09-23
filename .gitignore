@@ -1,0 +1,22 @@
+# Arquivos e pastas do VS Code
+.vscode/
+*.code-workspace
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backups e arquivos temporários
+*.tmp
+*.bak
+
+# Pastas de build ou cache (se usar futuramente)
+dist/
+build/
+.cache/
+
+# Node modules (caso use bibliotecas JS no futuro)
+node_modules/
