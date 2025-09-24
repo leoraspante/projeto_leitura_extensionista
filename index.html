@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ajuste para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura: Instrumento de Transformação e Consciência</title>
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com título e menu -->
+    <header>
+        <h1>Leitura: Instrumento de Transformação e Consciência</h1>
+        <nav>
+            <ul>
+                <!-- Links âncora para navegação interna -->
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#plano">Plano de Leitura</a></li>
+                <li><a href="#obras">Obras Gratuitas</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de introdução -->
+    <section id="intro">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            Este projeto busca promover o hábito da leitura como ferramenta de crescimento pessoal e desenvolvimento do senso crítico,
+            especialmente em comunidades de Contagem - MG, alinhado aos Objetivos de Desenvolvimento Sustentável (ODS 3, 4, 10 e 16).
+        </p>
+    </section>
+
+    <!-- Benefícios da leitura -->
+    <section id="beneficios">
+        <h2>Benefícios da Leitura</h2>
+        <ul>
+            <li><strong>Cognitivos:</strong> melhora da memória, vocabulário e raciocínio.</li>
+            <li><strong>Emocionais:</strong> redução do estresse, aumento da empatia.</li>
+            <li><strong>Sociais:</strong> mais capacidade de comunicação e argumentação.</li>
+            <li><strong>Profissionais:</strong> desenvolvimento de habilidades críticas e criativas.</li>
+        </ul>
+    </section>
+
+    <!-- Kanban simples para plano de leitura -->
+    <section id="plano">
+        <h2>Plano de Leitura</h2>
+        <p>Inspirado em metodologias ágeis, este plano organiza etapas, revisões e metas para incentivar a leitura contínua.</p>
+        <div class="kanban">
+            <div class="coluna">
+                <h3>A Fazer</h3>
+                <ul id="afazer"></ul>
+            </div>
+            <div class="coluna">
+                <h3>Em Progresso</h3>
+                <ul id="progresso"></ul>
+            </div>
+            <div class="coluna">
+                <h3>Concluído</h3>
+                <ul id="concluido"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de obras -->
+    <section id="obras">
+        <h2>Obras Gratuitas (Domínio Público)</h2>
+        <!-- Campo de busca -->
+        <input type="text" id="busca" placeholder="Buscar obra...">
+
+        <h3>Literatura Brasileira</h3>
+        <ul>
+            <li><a href="https://www.dominiopublico.gov.br/download/texto/machado_assis_dom_casmurro.pdf" target="_blank">Dom Casmurro – Machado de Assis</a></li>
+            <li><a href="https://www.dominiopublico.gov.br/download/texto/iracema_jose_de_alencar.pdf" target="_blank">Iracema – José de Alencar</a></li>
+        </ul>
+
+        <h3>Literatura Internacional</h3>
+        <ul>
+            <li><a href="https://www.gutenberg.org/ebooks/1513" target="_blank">Romeu e Julieta – William Shakespeare</a></li>
+        </ul>
+
+        <h3>Filosofia Grega e Romana</h3>
+        <ul>
+            <li><a href="https://www.dominiopublico.gov.br/download/texto/republica_platao.pdf" target="_blank">A República – Platão</a></li>
+            <li><a href="https://www.dominiopublico.gov.br/download/texto/apologia_socrates_platao.pdf" target="_blank">Apologia a Sócrates – Platão</a></li>
+            <li><a href="https://www.gutenberg.org/ebooks/20247" target="_blank">Cartas a Lucílio – Sêneca</a></li>
+            <li><a href="https://www.gutenberg.org/ebooks/12559" target="_blank">Enchiridion (Manual) – Epicteto</a></li>
+            <li><a href="https://www.gutenberg.org/ebooks/2680" target="_blank">Meditações – Marco Aurélio</a></li>
+        </ul>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz">
+        <h2>Quiz: Qual livro combina com você?</h2>
+        <button onclick="iniciarQuiz()">Começar Quiz</button>
+        <div id="resultadoQuiz"></div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="mensagem">Mensagem/Sugestão de obra:</label>
+            <textarea id="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto desenvolvido para Atividade Extensionista - UNINTER</p>
+    </footer>
+
+    <!-- JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
